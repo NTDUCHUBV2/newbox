@@ -1,86 +1,91 @@
-<!-- Clone by @WusThanhDieu -->
 <!DOCTYPE html>
 <html lang="en" class="dark">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Github WusThanhDieu</title>
-    <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet"/>
-    <link rel="stylesheet" href="/static/css/app.css" />
-  </head>
-  <body class="font-sans antialiased">
-    <div
-      id="app"
-      data-page='{
-        "component": "views/home",
-        "props": {
-          "errors": {},
-          "name": "Github WusThanhDieu",
-          "quote": {
-            "message": "",
-            "author": ""
-          },
-          "auth": {
-            "user": null
-          },
-          "ziggy": {
-            "port": null,
-            "defaults": [],
-            "routes": {
-              "home": {
-                "uri": "/",
-                "methods": ["GET", "HEAD"]
-              },
-              "show-create-form": {
-                "uri": "create-message/{id?}",
-                "methods": ["GET", "HEAD"],
-                "parameters": ["id"]
-              },
-              "create-form": {
-                "uri": "create-message",
-                "methods": ["POST"]
-              },
-              "login": {
-                "uri": "login",
-                "methods": ["GET", "HEAD"]
-              },
-              "logout": {
-                "uri": "logout",
-                "methods": ["POST"]
-              },
-              "storage.local": {
-                "uri": "storage/{path}",
-                "methods": ["GET", "HEAD"],
-                "wheres": {
-                  "path": ".*"
-                },
-                "parameters": ["path"]
-              }
-            },
-            "location": ""
-          },
-          "message": "",
-          "client": {
-            "fontName": "Mali",
-            "color": "#ff0019",
-            "messages": [
-              "Github WusThanhDieu",
-              "Test 1",
-              "Test 2"
-            ],
-            "music": "//thanhdieu.com/music.mp3"
-          },
-          "clientId": "/"
-        },
-        "url": "/",
-        "version": "",
-        "clearHistory": false,
-        "encryptHistory": false
-      }
-      '
-    >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Github WusThanhDieu</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Personal site by WusThanhDieu. Features messages, quotes, and music." />
+  <meta name="author" content="WusThanhDieu" />
+
+  <!-- Font & Style -->
+  <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/css/app.css" />
+</head>
+<body class="font-sans antialiased">
+
+  <div id="app"
+       data-page="{ 
+         &quot;component&quot;: &quot;views/home&quot;, 
+         &quot;props&quot;: {
+           &quot;errors&quot;: {},
+           &quot;name&quot;: &quot;Github WusThanhDieu&quot;,
+           &quot;quote&quot;: {
+             &quot;message&quot;: &quot;&quot;,
+             &quot;author&quot;: &quot;&quot;
+           },
+           &quot;auth&quot;: {
+             &quot;user&quot;: null
+           },
+           &quot;ziggy&quot;: {
+             &quot;port&quot;: null,
+             &quot;defaults&quot;: [],
+             &quot;routes&quot;: {
+               &quot;home&quot;: {
+                 &quot;uri&quot;: &quot;/&quot;,
+                 &quot;methods&quot;: [&quot;GET&quot;, &quot;HEAD&quot;]
+               },
+               &quot;show-create-form&quot;: {
+                 &quot;uri&quot;: &quot;create-message/{id?}&quot;,
+                 &quot;methods&quot;: [&quot;GET&quot;, &quot;HEAD&quot;],
+                 &quot;parameters&quot;: [&quot;id&quot;]
+               },
+               &quot;create-form&quot;: {
+                 &quot;uri&quot;: &quot;create-message&quot;,
+                 &quot;methods&quot;: [&quot;POST&quot;]
+               },
+               &quot;login&quot;: {
+                 &quot;uri&quot;: &quot;login&quot;,
+                 &quot;methods&quot;: [&quot;GET&quot;, &quot;HEAD&quot;]
+               },
+               &quot;logout&quot;: {
+                 &quot;uri&quot;: &quot;logout&quot;,
+                 &quot;methods&quot;: [&quot;POST&quot;]
+               },
+               &quot;storage.local&quot;: {
+                 &quot;uri&quot;: &quot;storage/{path}&quot;,
+                 &quot;methods&quot;: [&quot;GET&quot;, &quot;HEAD&quot;],
+                 &quot;wheres&quot;: {
+                   &quot;path&quot;: &quot;.*&quot;
+                 },
+                 &quot;parameters&quot;: [&quot;path&quot;]
+               }
+             },
+             &quot;location&quot;: &quot;&quot;
+           },
+           &quot;message&quot;: &quot;&quot;,
+           &quot;client&quot;: {
+             &quot;fontName&quot;: &quot;Mali&quot;,
+             &quot;color&quot;: &quot;#ff0019&quot;,
+             &quot;messages&quot;: [
+               &quot;Github WusThanhDieu&quot;,
+               &quot;Test 1&quot;,
+               &quot;Test 2&quot;
+             ],
+             &quot;music&quot;: &quot;//thanhdieu.com/music.mp3&quot;
+           },
+           &quot;clientId&quot;: &quot;/&quot;
+         },
+         &quot;url&quot;: &quot;/&quot;,
+         &quot;version&quot;: &quot;&quot;,
+         &quot;clearHistory&quot;: false,
+         &quot;encryptHistory&quot;: false
+       }">
   </div>
+
+  <!-- Scripts -->
   <script type="module" src="/static/js/app.js"></script>
   <script type="module" src="/static/js/home.js"></script>
-  </body>
+</body>
 </html>
